@@ -1,0 +1,20 @@
+SELECT * FROM Patients;
+
+SELECT * FROM Doctors;
+
+SELECT * FROM Patients WHERE age > 25;
+
+SELECT COUNT(*) AS Total_Patients FROM Patients;
+
+SELECT Patients.patient_name, Appointments.appointment_date FROM Patients
+JOIN Appointments
+ON Patients.patient_id = Appointments.patient_id;
+
+SELECT Doctors.doctor_name, Patients.patient_name
+FROM Appointments
+JOIN Doctors
+ON Appointments.doctor_id = Doctors.doctor_id
+JOIN Patients
+ON Appointments.patient_id = Patients.patient_id;
+
+SELECT * FROM Doctors WHERE specialization = 'Cardiology';

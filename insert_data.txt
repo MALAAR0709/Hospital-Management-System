@@ -1,0 +1,21 @@
+INSERT INTO Patients VALUES
+(1, 'Arun', 25, 'Male', '9876543210'),
+(2, 'Priya', 30, 'Female', '9876543211'),
+(3, 'Kumar', 45, 'Male', '9876543212'),
+(4, 'Divya', 22, 'Female', '9876543213');
+
+INSERT INTO Doctors VALUES
+(101, 'Dr. Ravi', 'Cardiology', '9876500001'),
+(102, 'Dr. Meena', 'Dermatology', '9876500002'),
+(103, 'Dr. Kumar', 'Neurology', '9876500003');
+
+INSERT INTO Appointments VALUES
+(1001, 1, 101, '2026-11-23'),
+(1002, 2, 102, '2026-11-24'),
+(1003, 3, 103, '2026-11-25'),
+(1004, 4, 101, '2026-11-26');
+
+INSERT INTO Medical_Records VALUES
+(201, 1, 'Blood Pressure', 'Regular Checkup', '2026-11-20'),
+(202, 2, 'Skin Allergy', 'Skin Consultation', '2026-11-20'),
+(203, 3, 'Headache', 'General Consultation', '2026-11-21');

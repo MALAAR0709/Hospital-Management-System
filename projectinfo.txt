@@ -1,0 +1,47 @@
+HOSPITAL MANAGEMENT SYSTEM
+
+ABOUT THE PROJECT:-
+
+1)The Hospital Management System is a beginner-level SQL project developed using MySQL.
+
+2)It helps manage hospital information, including patients, doctors, appointments and medical records.
+
+OBJECTIVES:-
+
+- Store patient information.
+- Maintain doctor details.
+- Manage patient appointments.
+- Store medical records.
+- Retrieve hospital information using SQL queries.
+
+DATABASE TABLES:-
+
+1. Patients
+2. Doctors
+3. Appointments
+4. Medical_Records
+
+SQL Concepts Used:-
+
+- CREATE DATABASE
+- CREATE TABLE
+- INSERT INTO
+- SELECT
+- WHERE
+- PRIMARY KEY
+- FOREIGN KEY
+- JOIN
+- COUNT
+
+PROJECT FILES:-
+
+- database.sql – Creates the database and tables.
+- insert_data.sql – Inserts sample data.
+- queries.sql – Contains SQL queries.
+
+TOOLS USED:-
+
+- MySQL
+- SQL
+- GitHub
+
