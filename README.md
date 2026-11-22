@@ -44,6 +44,14 @@ Project Files
 - "database.sql" – Creates the database and tables.
 - "insert_data.sql" – Inserts sample records.
 - "queries.sql" – Contains SQL queries.
+## Entity Relationship Diagram
+
+```mermaid
+erDiagram
+    PATIENTS ||--o{ APPOINTMENTS : books
+    DOCTORS ||--o{ APPOINTMENTS : handles
+    PATIENTS ||--o{ MEDICAL_RECORDS : has
+```
 erDiagram
     PATIENTS ||--o{ APPOINTMENTS : books
     DOCTORS ||--o{ APPOINTMENTS : handles
