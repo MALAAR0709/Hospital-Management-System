@@ -44,3 +44,37 @@ Project Files
 - "database.sql" – Creates the database and tables.
 - "insert_data.sql" – Inserts sample records.
 - "queries.sql" – Contains SQL queries.
+erDiagram
+    PATIENTS ||--o{ APPOINTMENTS : books
+    DOCTORS ||--o{ APPOINTMENTS : handles
+    PATIENTS ||--o{ MEDICAL_RECORDS : has
+
+    PATIENTS {
+        INT patient_id PK
+        VARCHAR patient_name
+        INT age
+        VARCHAR gender
+        VARCHAR phone
+    }
+
+    DOCTORS {
+        INT doctor_id PK
+        VARCHAR doctor_name
+        VARCHAR specialization
+        VARCHAR phone
+    }
+
+    APPOINTMENTS {
+        INT appointment_id PK
+        INT patient_id FK
+        INT doctor_id FK
+        DATE appointment_date
+    }
+
+    MEDICAL_RECORDS {
+        INT record_id PK
+        INT patient_id FK
+        VARCHAR diagnosis
+        VARCHAR treatment
+        DATE record_date
+    }
